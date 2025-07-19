@@ -1,0 +1,29 @@
+# Librerías fundamentales para Ciencia de Datos
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scipy>=1.7.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+
+# Visualización avanzada
+plotly>=5.0.0
+
+# Análisis estadístico
+statsmodels>=0.13.0
+
+# Trabajo con archivos Excel
+openpyxl>=3.0.0
+xlrd>=2.0.0
+
+# Jupyter Notebooks
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Generación de informes
+jinja2>=3.0.0
+
+# Utilidades adicionales
+tqdm>=4.62.0 
