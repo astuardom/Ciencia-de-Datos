@@ -1,0 +1,101 @@
+Estudiante,Grado,Experimento,Resultado,Unidad,Fecha,Observaciones
+Luis,5,Fotosíntesis,NaN,% O2,2025-04-24,Valor atípico
+Ana,5,Densidad del Agua,0.97,g/cm³,2025-04-15,Sin anomalías
+Lucía,5,Fotosíntesis,2.34,NaN,2025-04-17,Repetir experimento
+Lucía,6,Densidad del Agua,1.13,g/cm³,2025-04-16,Hervido completo
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-22,Metal calentado
+Marta,5,Densidad del Agua,1.01,g/cm³,2025-04-16,Unidad mal escrita
+Marta,6,Densidad del Agua,1.12,g/cm³,2025-04-19,Poca luz natural
+Pedro,5,Fotosíntesis,2.09,NaN,2025-04-24,Unidad mal escrita
+Lucía,5,Densidad del Agua,0.91,g/cm³,2025-04-23,Metal calentado
+Marta,5,Crecimiento de Moho,4.6,cm,2025-04-20,Valor atípico
+Marta,6,Cambios de Estado,70.0,°C,2025-04-23,Unidad mal escrita
+Marta,5,Cambios de Estado,60.0,°C,2025-04-16,Hervido completo
+Lucía,5,Crecimiento de Moho,3.4,cm,2025-04-21,Baja tasa observada
+Lucía,5,Cambios de Estado,60.0,°C,2025-04-17,Metal calentado
+Ana,6,Conductividad Térmica,60.0,°C,2025-04-24,Poca luz natural
+Luis,6,Crecimiento de Moho,4.0,cm,2025-04-23,Valor atípico
+Pedro,5,Cambios de Estado,70.0,°C,2025-04-20,Metal calentado
+Lucía,6,Fotosíntesis,2.36,% O2,2025-04-20,Valor atípico
+Marta,5,Crecimiento de Moho,3.5,cm,2025-04-16,Poca luz natural
+Ana,5,Crecimiento de Moho,3.9,cm,2025-04-24,Valor atípico
+Lucía,5,Conductividad Térmica,70.0,°C,2025-04-24,Repetir experimento
+Lucía,6,Fotosíntesis,3.22,% O2,2025-04-21,Sin anomalías
+Ana,6,Cambios de Estado,60.0,°C,2025-04-16,Baja tasa observada
+Pedro,5,Conductividad Térmica,40.0,°C,2025-04-24,Baja tasa observada
+Lucía,5,Fotosíntesis,3.33,% O2,2025-04-17,Baja tasa observada
+Lucía,5,Crecimiento de Moho,3.1,cm,2025-04-15,Hervido completo
+Lucía,5,Fotosíntesis,2.15,NaN,2025-04-17,Sin anomalías
+Ana,6,Cambios de Estado,70.0,°C,2025-04-20,Sin anomalías
+Luis,5,Densidad del Agua,1.12,g/cm³,2025-04-24,Poca luz natural
+Lucía,5,Crecimiento de Moho,4.0,cm,2025-04-18,Hervido completo
+Marta,6,Crecimiento de Moho,4.8,cm,2025-04-18,Metal calentado
+Marta,6,Cambios de Estado,90.0,°C,2025-04-23,Repetir experimento
+Ana,5,Crecimiento de Moho,2.2,cm,2025-04-20,Sin anomalías
+Lucía,5,Fotosíntesis,1.94,% O2,2025-04-16,Poca luz natural
+Ana,5,Densidad del Agua,1.17,g/cm³,2025-04-16,Unidad mal escrita
+Ana,5,Cambios de Estado,90.0,°C,2025-04-21,Metal calentado
+Lucía,5,Fotosíntesis,2.65,% O2,2025-04-17,Metal calentado
+Pedro,6,Crecimiento de Moho,2.3,cm,2025-04-21,Valor atípico
+Marta,6,Conductividad Térmica,NaN,°C,2025-04-23,Sin anomalías
+Ana,5,Conductividad Térmica,60.0,°C,2025-04-22,Poca luz natural
+Luis,5,Crecimiento de Moho,3.6,cm,2025-04-19,Hervido completo
+Pedro,5,Cambios de Estado,90.0,°C,2025-04-23,Metal calentado
+Ana,6,Fotosíntesis,1.7,% O2,2025-04-22,Sin anomalías
+Ana,5,Crecimiento de Moho,3.2,cm,2025-04-16,Repetir experimento
+Luis,6,Densidad del Agua,0.95,g/cm³,2025-04-20,Sin anomalías
+Pedro,6,Conductividad Térmica,NaN,°C,2025-04-18,Valor atípico
+Lucía,6,Crecimiento de Moho,2.6,cm,2025-04-22,Metal calentado
+Ana,5,Cambios de Estado,60.0,°C,2025-04-22,Sin anomalías
+Lucía,6,Fotosíntesis,NaN,% O2,2025-04-17,Hervido completo
+Ana,5,Crecimiento de Moho,2.2,NaN,2025-04-23,NaN
+Luis,6,Densidad del Agua,1.18,g/cm³,2025-04-18,Metal calentado
+Lucía,5,Fotosíntesis,1.66,% O2,2025-04-19,Unidad mal escrita
+Marta,5,Cambios de Estado,70.0,°C,2025-04-21,Baja tasa observada
+Pedro,5,Cambios de Estado,90.0,NaN,2025-04-19,NaN
+Ana,5,Conductividad Térmica,40.0,°C,2025-04-21,Poca luz natural
+Lucía,5,Fotosíntesis,2.03,% O2,2025-04-20,Unidad mal escrita
+Ana,5,Cambios de Estado,80.0,°C,2025-04-23,Hervido completo
+Pedro,6,Fotosíntesis,3.47,% O2,2025-04-19,Sin anomalías
+Lucía,6,Densidad del Agua,1.18,g/cm³,2025-04-18,Hervido completo
+Marta,5,Densidad del Agua,1.12,g/cm³,2025-04-18,Hervido completo
+Marta,6,Fotosíntesis,1.92,% O2,2025-04-17,Unidad mal escrita
+Luis,6,Fotosíntesis,NaN,% O2,2025-04-22,Sin anomalías
+Ana,6,Cambios de Estado,60.0,°C,2025-04-23,Sin anomalías
+Marta,5,Cambios de Estado,70.0,°C,2025-04-22,Repetir experimento
+Lucía,6,Fotosíntesis,1.52,% O2,2025-04-17,Poca luz natural
+Luis,5,Cambios de Estado,100.0,°C,2025-04-18,Hervido completo
+Pedro,5,Densidad del Agua,0.99,g/cm³,2025-04-22,Sin anomalías
+Marta,5,Crecimiento de Moho,4.0,cm,2025-04-23,Unidad mal escrita
+Lucía,6,Fotosíntesis,3.0,% O2,2025-04-18,NaN
+Luis,5,Conductividad Térmica,40.0,°C,2025-04-17,NaN
+Marta,6,Crecimiento de Moho,2.8,cm,2025-04-16,Poca luz natural
+Pedro,5,Conductividad Térmica,50.0,°C,2025-04-16,Metal calentado
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-20,Metal calentado
+Ana,5,Conductividad Térmica,60.0,NaN,2025-04-20,Baja tasa observada
+Ana,6,Cambios de Estado,100.0,NaN,2025-04-17,Valor atípico
+Lucía,6,Densidad del Agua,0.93,g/cm³,2025-04-17,Baja tasa observada
+Luis,6,Densidad del Agua,0.93,g/cm³,2025-04-19,Valor atípico
+Marta,6,Conductividad Térmica,40.0,°C,2025-04-20,Valor atípico
+Lucía,5,Cambios de Estado,60.0,°C,2025-04-24,Valor atípico
+Ana,5,Cambios de Estado,90.0,°C,2025-04-19,Poca luz natural
+Marta,6,Densidad del Agua,1.12,g/cm³,2025-04-21,Baja tasa observada
+Lucía,6,Conductividad Térmica,60.0,°C,2025-04-16,Valor atípico
+Marta,5,Crecimiento de Moho,3.3,cm,2025-04-21,Valor atípico
+Luis,6,Conductividad Térmica,40.0,°C,2025-04-22,Baja tasa observada
+Marta,5,Conductividad Térmica,60.0,°C,2025-04-20,Repetir experimento
+Pedro,6,Crecimiento de Moho,3.5,cm,2025-04-24,Hervido completo
+Ana,6,Fotosíntesis,2.83,% O2,2025-04-23,Unidad mal escrita
+Ana,5,Cambios de Estado,70.0,°C,2025-04-23,Metal calentado
+Luis,5,Densidad del Agua,0.97,g/cm³,2025-04-15,Repetir experimento
+Lucía,5,Conductividad Térmica,70.0,NaN,2025-04-21,Metal calentado
+Pedro,6,Conductividad Térmica,50.0,°C,2025-04-15,Hervido completo
+Ana,5,Conductividad Térmica,50.0,°C,2025-04-22,Hervido completo
+Lucía,6,Densidad del Agua,1.07,g/cm³,2025-04-20,Poca luz natural
+Pedro,5,Conductividad Térmica,60.0,°C,2025-04-19,Repetir experimento
+Lucía,6,Fotosíntesis,2.39,% O2,2025-04-21,NaN
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-20,NaN
+Lucía,6,Crecimiento de Moho,2.8,cm,2025-04-24,NaN
+Marta,5,Cambios de Estado,80.0,NaN,2025-04-17,Unidad mal escrita
+Lucía,5,Crecimiento de Moho,2.5,NaN,2025-04-17,Valor atípico
+Luis,5,Densidad del Agua,1.02,g/cm³,2025-04-18,Unidad mal escrita

@@ -1,0 +1,16 @@
+Estadísticas para energia:
+  media: 12.897333333333332
+  mediana: 12.9
+  moda: 12.3
+  std: 2.63146503866597
+  percentiles: {0.25: 11.1, 0.5: 12.9, 0.75: 14.7}
+  rango: 14.100000000000001
+
+Estadísticas para momento:
+  media: 2.494
+  mediana: 2.5
+  moda: 2.5
+  std: 0.5417338694269364
+  percentiles: {0.25: 2.1, 0.5: 2.5, 0.75: 2.9}
+  rango: 3.4
+

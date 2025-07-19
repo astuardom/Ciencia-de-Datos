@@ -1,0 +1,7 @@
+ID_Estudiante,Estudiante,Carrera,Materia,Calificación
+1,Juan,Ingeniería,,
+2,María,Historia,,
+1,,,Matemáticas,6.5
+1,,,Historia,5.8
+2,,,Matemáticas,4.2
+2,,,Historia,6.0

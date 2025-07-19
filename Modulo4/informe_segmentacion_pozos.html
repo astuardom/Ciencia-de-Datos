@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang='es'>
+<head><meta charset='UTF-8'><title>Informe Web – Segmentación Pozos</title></head>
+<body style='font-family: Arial; margin: 40px;'>
+<h1>Informe Web: Segmentación de Pozos Petroleros</h1>
+<h2>Saudi Aramco – Ciencia de Datos</h2>
+<p><strong>Fecha de generación:</strong> 2025-07-04</p>
+<h3 id='objetivo'>1. Objetivo del Análisis</h3>
+<p>Identificar patrones operativos y agrupar pozos similares mediante análisis estadístico, segmentación y modelos predictivos.</p>
+<h3 id='corte'>2. Producción promedio por categoría de corte de agua</h3>
+<table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>oil_bbl</th>
+      <th>gas_mscf</th>
+    </tr>
+    <tr>
+      <th>corte_agua_cat</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Bajo</th>
+      <td>99018.595986</td>
+      <td>75508.990256</td>
+    </tr>
+    <tr>
+      <th>Medio</th>
+      <td>98047.802060</td>
+      <td>72587.952202</td>
+    </tr>
+    <tr>
+      <th>Alto</th>
+      <td>96283.992473</td>
+      <td>71040.269294</td>
+    </tr>
+  </tbody>
+</table>
+<h3>3. Promedio de presión y temperatura por campo</h3>
+<table class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>reservoir_pressure_psi</th>
+      <th>reservoir_temperature_c</th>
+    </tr>
+    <tr>
+      <th>field</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Ghawar</th>
+      <td>4139.510514</td>
+      <td>105.871109</td>
+    </tr>
+    <tr>
+      <th>Khursaniyah</th>
+      <td>4084.297434</td>
+      <td>104.354521</td>
+    </tr>
+    <tr>
+      <th>Safaniya</th>
+      <td>4145.193783</td>
+      <td>104.615365</td>
+    </tr>
+    <tr>
+      <th>Shaybah</th>
+      <td>4191.404519</td>
+      <td>105.371090</td>
+    </tr>
+  </tbody>
+</table>
+<h3>4. Visualizaciones Interpretadas</h3>
+<ul>
+  <li><strong>Campo vs Corte de Agua:</strong><br><img src='graficos/grafico_cross1.png' width='500'></li>
+  <li><strong>Profundidad vs Presión:</strong><br><img src='graficos/grafico_cross2.png' width='500'></li>
+  <li><strong>Producción vs Presión (Boxplot):</strong><br><img src='graficos/grafico_boxplot_oil.png' width='500'></li>
+  <li><strong>Distribución de Producción de Petróleo:</strong><br><img src='graficos/histograma_oil.png' width='500'></li>
+  <li><strong>Matriz de Dispersión:</strong><br><img src='graficos/grafico_pairplot.png' width='500'></li>
+  <li><strong>Matriz de Correlación:</strong><br><img src='graficos/grafico_correlacion.png' width='500'></li>
+  <li><strong>Segmentación con KMeans:</strong><br><img src='graficos/grafico_clustering.png' width='500'></li>
+</ul>
+<h3>5. Correlación entre Variables</h3>
+<pre>                          oil_bbl  gas_mscf  water_cut_pct  reservoir_pressure_psi  reservoir_temperature_c  well_depth_m
+oil_bbl                  1.000000  0.724366      -0.034737                0.024973                 0.057546      0.014351
+gas_mscf                 0.724366  1.000000      -0.081284                0.077607                 0.064158      0.003400
+water_cut_pct           -0.034737 -0.081284       1.000000                0.029160                 0.012902      0.043051
+reservoir_pressure_psi   0.024973  0.077607       0.029160                1.000000                -0.022722      0.031239
+reservoir_temperature_c  0.057546  0.064158       0.012902               -0.022722                 1.000000      0.042191
+well_depth_m             0.014351  0.003400       0.043051                0.031239                 0.042191      1.000000</pre>
+<h3>6. Evaluación del Modelo</h3>
+<ul>
+  <li><strong>R²:</strong> 0.0021</li>
+  <li><strong>MSE:</strong> 517117935.21</li>
+  <li><strong>MAE:</strong> 18861.33</li>
+</ul>
+<h3>7. Conclusiones</h3>
+<ul>
+  <li>Los pozos con mayor corte de agua tienden a producir menos.</li>
+  <li>Existen tres clústeres operativos bien diferenciados.</li>
+  <li>El modelo lineal tiene bajo poder explicativo, se sugiere probar modelos más complejos.</li>
+</ul>
+</body>
+</html>

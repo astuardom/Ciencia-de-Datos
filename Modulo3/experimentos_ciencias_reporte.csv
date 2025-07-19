@@ -1,0 +1,101 @@
+Estudiante,Grado,Experimento,Resultado,Unidad,Fecha,Observaciones,Resultado_Normalizado
+Luis,5,Fotosíntesis,0.0,% O2,2025-04-24,Valor atípico,
+Ana,5,Densidad del Agua,0.97,g/cm³,2025-04-15,Sin anomalías,0.97
+Lucía,5,Fotosíntesis,2.34,Desconocido,2025-04-17,Repetir experimento,234.0
+Lucía,6,Densidad del Agua,1.13,g/cm³,2025-04-16,Hervido completo,1.13
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-22,Metal calentado,70.0
+Marta,5,Densidad del Agua,1.01,g/cm³,2025-04-16,Unidad mal escrita,1.01
+Marta,6,Densidad del Agua,1.12,g/cm³,2025-04-19,Poca luz natural,1.12
+Pedro,5,Fotosíntesis,2.09,Desconocido,2025-04-24,Unidad mal escrita,209.0
+Lucía,5,Densidad del Agua,0.91,g/cm³,2025-04-23,Metal calentado,0.91
+Marta,5,Crecimiento de Moho,4.6,cm,2025-04-20,Valor atípico,4.6
+Marta,6,Cambios de Estado,70.0,°C,2025-04-23,Unidad mal escrita,70.0
+Marta,5,Cambios de Estado,60.0,°C,2025-04-16,Hervido completo,60.0
+Lucía,5,Crecimiento de Moho,3.4,cm,2025-04-21,Baja tasa observada,3.4
+Lucía,5,Cambios de Estado,60.0,°C,2025-04-17,Metal calentado,60.0
+Ana,6,Conductividad Térmica,60.0,°C,2025-04-24,Poca luz natural,60.0
+Luis,6,Crecimiento de Moho,4.0,cm,2025-04-23,Valor atípico,4.0
+Pedro,5,Cambios de Estado,70.0,°C,2025-04-20,Metal calentado,70.0
+Lucía,6,Fotosíntesis,2.36,% O2,2025-04-20,Valor atípico,236.0
+Marta,5,Crecimiento de Moho,3.5,cm,2025-04-16,Poca luz natural,3.5
+Ana,5,Crecimiento de Moho,3.9,cm,2025-04-24,Valor atípico,3.9
+Lucía,5,Conductividad Térmica,70.0,°C,2025-04-24,Repetir experimento,70.0
+Lucía,6,Fotosíntesis,3.22,% O2,2025-04-21,Sin anomalías,322.0
+Ana,6,Cambios de Estado,60.0,°C,2025-04-16,Baja tasa observada,60.0
+Pedro,5,Conductividad Térmica,40.0,°C,2025-04-24,Baja tasa observada,40.0
+Lucía,5,Fotosíntesis,3.33,% O2,2025-04-17,Baja tasa observada,333.0
+Lucía,5,Crecimiento de Moho,3.1,cm,2025-04-15,Hervido completo,3.1
+Lucía,5,Fotosíntesis,2.15,Desconocido,2025-04-17,Sin anomalías,215.0
+Ana,6,Cambios de Estado,70.0,°C,2025-04-20,Sin anomalías,70.0
+Luis,5,Densidad del Agua,1.12,g/cm³,2025-04-24,Poca luz natural,1.12
+Lucía,5,Crecimiento de Moho,4.0,cm,2025-04-18,Hervido completo,4.0
+Marta,6,Crecimiento de Moho,4.8,cm,2025-04-18,Metal calentado,4.8
+Marta,6,Cambios de Estado,90.0,°C,2025-04-23,Repetir experimento,90.0
+Ana,5,Crecimiento de Moho,2.2,cm,2025-04-20,Sin anomalías,2.2
+Lucía,5,Fotosíntesis,1.94,% O2,2025-04-16,Poca luz natural,194.0
+Ana,5,Densidad del Agua,1.17,g/cm³,2025-04-16,Unidad mal escrita,1.17
+Ana,5,Cambios de Estado,90.0,°C,2025-04-21,Metal calentado,90.0
+Lucía,5,Fotosíntesis,2.65,% O2,2025-04-17,Metal calentado,265.0
+Pedro,6,Crecimiento de Moho,2.3,cm,2025-04-21,Valor atípico,2.3
+Marta,6,Conductividad Térmica,0.0,°C,2025-04-23,Sin anomalías,
+Ana,5,Conductividad Térmica,60.0,°C,2025-04-22,Poca luz natural,60.0
+Luis,5,Crecimiento de Moho,3.6,cm,2025-04-19,Hervido completo,3.6
+Pedro,5,Cambios de Estado,90.0,°C,2025-04-23,Metal calentado,90.0
+Ana,6,Fotosíntesis,1.7,% O2,2025-04-22,Sin anomalías,170.0
+Ana,5,Crecimiento de Moho,3.2,cm,2025-04-16,Repetir experimento,3.2
+Luis,6,Densidad del Agua,0.95,g/cm³,2025-04-20,Sin anomalías,0.95
+Pedro,6,Conductividad Térmica,0.0,°C,2025-04-18,Valor atípico,
+Lucía,6,Crecimiento de Moho,2.6,cm,2025-04-22,Metal calentado,2.6
+Ana,5,Cambios de Estado,60.0,°C,2025-04-22,Sin anomalías,60.0
+Lucía,6,Fotosíntesis,0.0,% O2,2025-04-17,Hervido completo,
+Ana,5,Crecimiento de Moho,2.2,Desconocido,2025-04-23,Sin observaciones,2.2
+Luis,6,Densidad del Agua,1.18,g/cm³,2025-04-18,Metal calentado,1.18
+Lucía,5,Fotosíntesis,1.66,% O2,2025-04-19,Unidad mal escrita,166.0
+Marta,5,Cambios de Estado,70.0,°C,2025-04-21,Baja tasa observada,70.0
+Pedro,5,Cambios de Estado,90.0,Desconocido,2025-04-19,Sin observaciones,90.0
+Ana,5,Conductividad Térmica,40.0,°C,2025-04-21,Poca luz natural,40.0
+Lucía,5,Fotosíntesis,2.03,% O2,2025-04-20,Unidad mal escrita,202.99999999999997
+Ana,5,Cambios de Estado,80.0,°C,2025-04-23,Hervido completo,80.0
+Pedro,6,Fotosíntesis,3.47,% O2,2025-04-19,Sin anomalías,347.0
+Lucía,6,Densidad del Agua,1.18,g/cm³,2025-04-18,Hervido completo,1.18
+Marta,5,Densidad del Agua,1.12,g/cm³,2025-04-18,Hervido completo,1.12
+Marta,6,Fotosíntesis,1.92,% O2,2025-04-17,Unidad mal escrita,192.0
+Luis,6,Fotosíntesis,0.0,% O2,2025-04-22,Sin anomalías,
+Ana,6,Cambios de Estado,60.0,°C,2025-04-23,Sin anomalías,60.0
+Marta,5,Cambios de Estado,70.0,°C,2025-04-22,Repetir experimento,70.0
+Lucía,6,Fotosíntesis,1.52,% O2,2025-04-17,Poca luz natural,152.0
+Luis,5,Cambios de Estado,100.0,°C,2025-04-18,Hervido completo,100.0
+Pedro,5,Densidad del Agua,0.99,g/cm³,2025-04-22,Sin anomalías,0.99
+Marta,5,Crecimiento de Moho,4.0,cm,2025-04-23,Unidad mal escrita,4.0
+Lucía,6,Fotosíntesis,3.0,% O2,2025-04-18,Sin observaciones,300.0
+Luis,5,Conductividad Térmica,40.0,°C,2025-04-17,Sin observaciones,40.0
+Marta,6,Crecimiento de Moho,2.8,cm,2025-04-16,Poca luz natural,2.8
+Pedro,5,Conductividad Térmica,50.0,°C,2025-04-16,Metal calentado,50.0
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-20,Metal calentado,70.0
+Ana,5,Conductividad Térmica,60.0,Desconocido,2025-04-20,Baja tasa observada,60.0
+Ana,6,Cambios de Estado,100.0,Desconocido,2025-04-17,Valor atípico,100.0
+Lucía,6,Densidad del Agua,0.93,g/cm³,2025-04-17,Baja tasa observada,0.93
+Luis,6,Densidad del Agua,0.93,g/cm³,2025-04-19,Valor atípico,0.93
+Marta,6,Conductividad Térmica,40.0,°C,2025-04-20,Valor atípico,40.0
+Lucía,5,Cambios de Estado,60.0,°C,2025-04-24,Valor atípico,60.0
+Ana,5,Cambios de Estado,90.0,°C,2025-04-19,Poca luz natural,90.0
+Marta,6,Densidad del Agua,1.12,g/cm³,2025-04-21,Baja tasa observada,1.12
+Lucía,6,Conductividad Térmica,60.0,°C,2025-04-16,Valor atípico,60.0
+Marta,5,Crecimiento de Moho,3.3,cm,2025-04-21,Valor atípico,3.3
+Luis,6,Conductividad Térmica,40.0,°C,2025-04-22,Baja tasa observada,40.0
+Marta,5,Conductividad Térmica,60.0,°C,2025-04-20,Repetir experimento,60.0
+Pedro,6,Crecimiento de Moho,3.5,cm,2025-04-24,Hervido completo,3.5
+Ana,6,Fotosíntesis,2.83,% O2,2025-04-23,Unidad mal escrita,283.0
+Ana,5,Cambios de Estado,70.0,°C,2025-04-23,Metal calentado,70.0
+Luis,5,Densidad del Agua,0.97,g/cm³,2025-04-15,Repetir experimento,0.97
+Lucía,5,Conductividad Térmica,70.0,Desconocido,2025-04-21,Metal calentado,70.0
+Pedro,6,Conductividad Térmica,50.0,°C,2025-04-15,Hervido completo,50.0
+Ana,5,Conductividad Térmica,50.0,°C,2025-04-22,Hervido completo,50.0
+Lucía,6,Densidad del Agua,1.07,g/cm³,2025-04-20,Poca luz natural,1.07
+Pedro,5,Conductividad Térmica,60.0,°C,2025-04-19,Repetir experimento,60.0
+Lucía,6,Fotosíntesis,2.39,% O2,2025-04-21,Sin observaciones,239.0
+Pedro,6,Cambios de Estado,70.0,°C,2025-04-20,Sin observaciones,70.0
+Lucía,6,Crecimiento de Moho,2.8,cm,2025-04-24,Sin observaciones,2.8
+Marta,5,Cambios de Estado,80.0,Desconocido,2025-04-17,Unidad mal escrita,80.0
+Lucía,5,Crecimiento de Moho,2.5,Desconocido,2025-04-17,Valor atípico,2.5
+Luis,5,Densidad del Agua,1.02,g/cm³,2025-04-18,Unidad mal escrita,1.02
