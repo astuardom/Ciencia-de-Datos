@@ -1,0 +1,63 @@
+Info del DataFrame:
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 7 entries, 0 to 6
+Data columns (total 8 columns):
+ #   Column                    Non-Null Count  Dtype 
+---  ------                    --------------  ----- 
+ 0   Atleta                    7 non-null      object
+ 1   Edad                      7 non-null      int64 
+ 2   Altura_cm                 7 non-null      int64 
+ 3   Peso_kg                   7 non-null      int64 
+ 4   Deporte                   7 non-null      object
+ 5   Entrenamientos_Semanales  7 non-null      int64 
+ 6   Medallas_Totales          7 non-null      int64 
+ 7   Pais                      7 non-null      object
+dtypes: int64(5), object(3)
+memory usage: 576.0+ bytes
+
+Primeras 5 filas:
+           Atleta  Edad  Altura_cm  Peso_kg    Deporte  Entrenamientos_Semanales  Medallas_Totales     Pais
+0      Usain Bolt    34        195       94  Atletismo                         6                 8  Jamaica
+1    Simone Biles    26        142       47   Gimnasia                        10                 7   EE.UU.
+2  Michael Phelps    35        193       88   Natación                         9                23   EE.UU.
+3   Katie Ledecky    27        183       70   Natación                         8                10   EE.UU.
+4  Nadia Comaneci    45        160       50   Gimnasia                         7                 5  Rumania
+
+Estadísticas descriptivas:
+            Edad   Altura_cm    Peso_kg  Entrenamientos_Semanales  Medallas_Totales
+count   7.000000    7.000000   7.000000                  7.000000          7.000000
+mean   35.000000  174.571429  68.428571                  7.285714          8.571429
+std     6.831301   18.715921  17.614929                  1.799471          6.803361
+min    26.000000  142.000000  47.000000                  5.000000          3.000000
+25%    30.500000  167.000000  57.500000                  6.000000          4.500000
+50%    35.000000  175.000000  65.000000                  7.000000          7.000000
+75%    39.000000  188.000000  79.000000                  8.500000          9.000000
+max    45.000000  195.000000  94.000000                 10.000000         23.000000
+
+Tipos de variable:
+- Atleta: Categórica nominal
+- Edad: Cuantitativa discreta
+- Altura_cm: Cuantitativa continua
+- Peso_kg: Cuantitativa continua
+- Deporte: Categórica nominal
+- Entrenamientos_Semanales: Cuantitativa discreta
+- Medallas_Totales: Cuantitativa discreta
+- Pais: Categórica nominal
+
+Media de medallas: 8.571428571428571
+Mediana de medallas: 7.0
+Moda de medallas: 3
+
+Desviación estándar de la altura: 18.72 cm
+
+No se detectaron valores atípicos en peso.
+
+Correlación de Pearson entre entrenamientos semanales y medallas totales: 0.57 (p=0.1817)
+
+Interpretación correlación: Existe una correlación moderada.
+
+Regresión lineal: Medallas_Totales ~ Entrenamientos_Semanales
+Intercepto: -7.13, Pendiente: 2.15, R²: 0.32
+
+Interpretación regresión: Por cada entrenamiento semanal adicional, se espera que el número de medallas aumente en 2.15. El R² de 0.32 indica que el modelo explica el 32.5% de la variabilidad en las medallas.
+
