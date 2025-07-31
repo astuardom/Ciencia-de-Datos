@@ -1,0 +1,6 @@
+Feature,Coefficient,Abs_Coefficient,Interpretation
+Mes Fin Ciclo,1.3280920154933853,1.3280920154933853,Positivo (aumenta probabilidad)
+Mes Inicio Ciclo,-1.231814765193954,1.231814765193954,Negativo (disminuye probabilidad)
+Periodo información,-0.7708713706926777,0.7708713706926777,Negativo (disminuye probabilidad)
+Código Centro,-0.6913181040180162,0.6913181040180162,Negativo (disminuye probabilidad)
+Empresa,-0.257191496144028,0.257191496144028,Negativo (disminuye probabilidad)

@@ -40,12 +40,6 @@ Thumbs.db
 # Archivos de Jupyter
 .ipynb_checkpoints/
 
-# Archivos de datos grandes (opcional)
-*.csv
-*.xlsx
-*.xls
-*.zip
-*.rar
 
 # Logs
 *.log 
