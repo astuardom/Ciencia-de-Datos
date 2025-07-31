@@ -375,7 +375,7 @@ def crear_curva_roc_interactiva(metrics, y_test, y_pred, y_pred_proba, feature_i
         ),
         row=1, col=1
     )
-    
+
     # Línea diagonal
     fig.add_trace(
         go.Scatter(
