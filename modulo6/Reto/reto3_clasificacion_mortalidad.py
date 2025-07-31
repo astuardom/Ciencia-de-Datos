@@ -595,8 +595,8 @@ def crear_curva_roc_interactiva(metrics, y_test, y_pred, y_pred_proba, feature_i
     ruta_html = f'{carpeta_salida}/evaluacion_interactiva.html'
     fig.write_html(ruta_html)
     
-    print(f"✅ Visualización interactiva completa guardada en: {ruta_html}")
-    print("📊 Gráficos incluidos:")
+    print(f"Visualización interactiva completa guardada en: {ruta_html}")
+    print("Gráficos incluidos:")
     print("   - Curva ROC con AUC")
     print("   - Distribución de probabilidades por clase")
     print("   - Matriz de confusión")
