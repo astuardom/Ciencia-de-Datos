@@ -1,5 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+
 """
 RETO 3 (Clasificación): ¿Hubo evento crítico de mortalidad?
 Archivo: Mortalidades_Centro de cultivos.csv
@@ -42,7 +41,7 @@ def cargar_datos(ruta_archivo):
     Returns:
         pd.DataFrame: Dataset limpio y procesado
     """
-    print("📁 Cargando archivo CSV...")
+    print(" Cargando archivo CSV...")
     
     try:
         # Leer el archivo completo primero
@@ -64,11 +63,11 @@ def cargar_datos(ruta_archivo):
         # Limpiar filas completamente vacías
         df = df.dropna(how='all')
         
-        print(f"✅ Archivo cargado exitosamente: {df.shape[0]} filas, {df.shape[1]} columnas")
+        print(f" Archivo cargado exitosamente: {df.shape[0]} filas, {df.shape[1]} columnas")
         return df
         
     except Exception as e:
-        print(f"❌ Error al cargar el archivo: {e}")
+        print(f" Error al cargar el archivo: {e}")
         return None
 
 def limpiar_datos_robusta(df):
@@ -81,7 +80,7 @@ def limpiar_datos_robusta(df):
     Returns:
         pd.DataFrame: Dataset limpio
     """
-    print("\n🧹 LIMPIEZA ROBUSTA DE DATOS")
+    print("\n LIMPIEZA ROBUSTA DE DATOS")
     print("=" * 50)
     
     df_clean = df.copy()
@@ -133,7 +132,7 @@ def codificar_variables_categoricas(df):
     Returns:
         pd.DataFrame: Dataset con variables codificadas
     """
-    print("\n🔢 CODIFICACIÓN DE VARIABLES CATEGÓRICAS")
+    print("\n CODIFICACIÓN DE VARIABLES CATEGÓRICAS")
     print("=" * 50)
     
     df_encoded = df.copy()
@@ -146,7 +145,7 @@ def codificar_variables_categoricas(df):
         if col in df_encoded.columns:
             # Usar códigos categóricos para preservar orden si es relevante
             df_encoded[col] = pd.Categorical(df_encoded[col]).codes
-            print(f"✅ {col} codificada (valores únicos: {df_encoded[col].nunique()})")
+            print(f" {col} codificada (valores únicos: {df_encoded[col].nunique()})")
     
     return df_encoded
 
@@ -161,14 +160,14 @@ def escalar_datos(X_train, X_test):
     Returns:
         tuple: (X_train_scaled, X_test_scaled, scaler)
     """
-    print("\n📏 ESCALADO DE DATOS CON STANDARDSCALER")
+    print("\n ESCALADO DE DATOS CON STANDARDSCALER")
     print("=" * 50)
     
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
     
-    print(f"✅ Datos escalados: {X_train.shape[0]} muestras de entrenamiento, {X_test.shape[0]} de prueba")
+    print(f" Datos escalados: {X_train.shape[0]} muestras de entrenamiento, {X_test.shape[0]} de prueba")
     print(f"Media de features escaladas: {np.mean(X_train_scaled, axis=0)}")
     print(f"Desviación estándar de features escaladas: {np.std(X_train_scaled, axis=0)}")
     
@@ -185,7 +184,7 @@ def balancear_clases(X_train, y_train):
     Returns:
         tuple: (X_train_balanced, y_train_balanced)
     """
-    print("\n⚖️ BALANCEO DE CLASES CON SMOTE")
+    print("\n BALANCEO DE CLASES CON SMOTE")
     print("=" * 50)
     
     print(f"Distribución original de clases:")
@@ -213,13 +212,13 @@ def entrenar_modelo_logistic(X_train, y_train):
     Returns:
         LogisticRegression: Modelo entrenado
     """
-    print("\n🤖 ENTRENAMIENTO DE MODELO LOGISTICREGRESSION")
+    print("\n ENTRENAMIENTO DE MODELO LOGISTICREGRESSION")
     print("=" * 50)
     
     model = LogisticRegression(random_state=42, max_iter=1000, solver='liblinear')
     model.fit(X_train, y_train)
     
-    print("✅ Modelo entrenado exitosamente")
+    print(" Modelo entrenado exitosamente")
     print(f"Intercepto: {model.intercept_[0]:.4f}")
     print(f"Número de iteraciones: {model.n_iter_[0]}")
     
@@ -240,7 +239,7 @@ def evaluar_modelo_completo(y_test, y_pred, y_pred_proba, model, X_test, feature
     Returns:
         dict: Métricas de evaluación
     """
-    print("\n📊 EVALUACIÓN COMPLETA DEL MODELO")
+    print("\n EVALUACIÓN COMPLETA DEL MODELO")
     print("=" * 50)
     
     # Métricas básicas
@@ -292,7 +291,7 @@ def exportar_coeficientes(model, feature_names, carpeta_salida):
         feature_names (list): Nombres de las features
         carpeta_salida (str): Carpeta de salida
     """
-    print("\n📄 EXPORTAR COEFICIENTES A CSV")
+    print("\n EXPORTAR COEFICIENTES A CSV")
     print("=" * 50)
     
     coeficientes_df = pd.DataFrame({
@@ -312,7 +311,7 @@ def exportar_coeficientes(model, feature_names, carpeta_salida):
     
     print("Coeficientes del modelo:")
     print(coeficientes_df)
-    print(f"\n✅ Coeficientes exportados a: {ruta_coeficientes}")
+    print(f"\n Coeficientes exportados a: {ruta_coeficientes}")
     
     return coeficientes_df
 
@@ -329,7 +328,7 @@ def crear_curva_roc_interactiva(metrics, y_test, y_pred, y_pred_proba, feature_i
         df_clean (pd.DataFrame): Dataset limpio para análisis exploratorio
         carpeta_salida (str): Carpeta de salida
     """
-    print("\n📈 CREAR VISUALIZACIÓN INTERACTIVA COMPLETA")
+    print("\n CREAR VISUALIZACIÓN INTERACTIVA COMPLETA")
     print("=" * 50)
     
     # Preparar datos para análisis exploratorio
@@ -616,7 +615,7 @@ def crear_grafico_edad_vs_mortalidad(df, carpeta_salida):
         df (pd.DataFrame): Dataset con datos limpios
         carpeta_salida (str): Carpeta de salida
     """
-    print("\n📊 GRÁFICO: EDAD (DURACIÓN CICLO) VS MORTALIDAD")
+    print("\n GRÁFICO: EDAD (DURACIÓN CICLO) VS MORTALIDAD")
     print("=" * 50)
     
     try:
@@ -687,13 +686,13 @@ def crear_grafico_edad_vs_mortalidad(df, carpeta_salida):
         plt.savefig(ruta_grafico, dpi=300, bbox_inches='tight')
         plt.close()
         
-        print(f"✅ Gráfico guardado en: {ruta_grafico}")
-        print(f"📈 Correlación entre duración y mortalidad: {correlacion:.3f}")
+        print(f" Gráfico guardado en: {ruta_grafico}")
+        print(f" Correlación entre duración y mortalidad: {correlacion:.3f}")
         
         return df_temp
         
     except Exception as e:
-        print(f"❌ Error al crear gráfico de edad vs mortalidad: {e}")
+        print(f" Error al crear gráfico de edad vs mortalidad: {e}")
         return None
 
 def crear_grafico_centro_vs_mortalidad(df, carpeta_salida):
@@ -704,7 +703,7 @@ def crear_grafico_centro_vs_mortalidad(df, carpeta_salida):
         df (pd.DataFrame): Dataset con datos limpios
         carpeta_salida (str): Carpeta de salida
     """
-    print("\n📊 GRÁFICO: CENTRO VS MORTALIDAD")
+    print("\n GRÁFICO: CENTRO VS MORTALIDAD")
     print("=" * 50)
     
     try:
@@ -800,15 +799,15 @@ def crear_grafico_centro_vs_mortalidad(df, carpeta_salida):
         ruta_stats = f'{carpeta_salida}/estadisticas_por_empresa.csv'
         stats_por_empresa.to_csv(ruta_stats, encoding='utf-8')
         
-        print(f"✅ Gráfico guardado en: {ruta_grafico}")
-        print(f"📄 Estadísticas por empresa guardadas en: {ruta_stats}")
-        print(f"🏆 Empresa con mayor mortalidad total: {stats_por_empresa.index[0]}")
-        print(f"📊 Empresa con mayor mortalidad promedio: {stats_por_empresa.nlargest(1, 'Promedio_Mortalidad').index[0]}")
+        print(f" Gráfico guardado en: {ruta_grafico}")
+        print(f" Estadísticas por empresa guardadas en: {ruta_stats}")
+        print(f" Empresa con mayor mortalidad total: {stats_por_empresa.index[0]}")
+        print(f" Empresa con mayor mortalidad promedio: {stats_por_empresa.nlargest(1, 'Promedio_Mortalidad').index[0]}")
         
         return stats_por_empresa
         
     except Exception as e:
-        print(f"❌ Error al crear gráfico de centro vs mortalidad: {e}")
+        print(f" Error al crear gráfico de centro vs mortalidad: {e}")
         return None
 
 def main():
@@ -827,7 +826,7 @@ def main():
         os.makedirs(carpeta_salida)
     
     # 1. Cargar datos
-    print("\n1. 📁 CARGA Y LIMPIEZA ROBUSTA DE DATOS")
+    print("\n1.  CARGA Y LIMPIEZA ROBUSTA DE DATOS")
     df = cargar_datos('entrada/Mortalidades_Centro de cultivos.csv')
     if df is None:
         return
@@ -836,11 +835,11 @@ def main():
     df_clean, outliers = limpiar_datos_robusta(df)
     
     # 3. Codificación de variables categóricas
-    print("\n2. 🔢 CODIFICACIÓN DE VARIABLES CATEGÓRICAS")
+    print("\n2.  CODIFICACIÓN DE VARIABLES CATEGÓRICAS")
     df_encoded = codificar_variables_categoricas(df_clean)
     
     # 4. Crear variable objetivo
-    print("\n3. 🎯 CREAR VARIABLE OBJETIVO")
+    print("\n3.  CREAR VARIABLE OBJETIVO")
     Q90 = df_encoded['Mort. Total unidades'].quantile(0.90)
     df_encoded['evento_critico'] = (df_encoded['Mort. Total unidades'] > Q90).astype(int)
     
@@ -848,7 +847,7 @@ def main():
     print(f"Eventos críticos: {df_encoded['evento_critico'].sum()} ({df_encoded['evento_critico'].mean()*100:.2f}%)")
     
     # 5. Preparar datos para ML
-    print("\n4. 🎯 PREPARAR DATOS PARA MACHINE LEARNING")
+    print("\n4.  PREPARAR DATOS PARA MACHINE LEARNING")
     exclude_cols = ['evento_critico', 'Mort. Total unidades']
     feature_cols = [col for col in df_encoded.columns if col not in exclude_cols]
     
@@ -860,7 +859,7 @@ def main():
     print(f"Columnas de features: {list(X.columns)}")
     
     # 6. Separar datos
-    print("\n5. 🔀 SEPARAR DATOS DE ENTRENAMIENTO Y PRUEBA")
+    print("\n5.  SEPARAR DATOS DE ENTRENAMIENTO Y PRUEBA")
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.3, random_state=42, stratify=y
     )
@@ -871,19 +870,19 @@ def main():
     print(f"Proporción de eventos críticos en prueba: {y_test.mean():.3f}")
     
     # 7. Escalar datos
-    print("\n6. 📏 ESCALADO DE DATOS CON STANDARDSCALER")
+    print("\n6.  ESCALADO DE DATOS CON STANDARDSCALER")
     X_train_scaled, X_test_scaled, scaler = escalar_datos(X_train, X_test)
     
     # 8. Balancear clases
-    print("\n7. ⚖️ BALANCEO DE CLASES CON SMOTE")
+    print("\n7.  BALANCEO DE CLASES CON SMOTE")
     X_train_balanced, y_train_balanced = balancear_clases(X_train_scaled, y_train)
     
     # 9. Entrenar modelo
-    print("\n8. 🤖 ENTRENAMIENTO DE MODELO LOGISTICREGRESSION")
+    print("\n8.  ENTRENAMIENTO DE MODELO LOGISTICREGRESSION")
     model = entrenar_modelo_logistic(X_train_balanced, y_train_balanced)
     
     # 10. Realizar predicciones
-    print("\n9. 🔮 REALIZAR PREDICCIONES")
+    print("\n9.  REALIZAR PREDICCIONES")
     y_pred = model.predict(X_test_scaled)
     y_pred_proba = model.predict_proba(X_test_scaled)[:, 1]
     
@@ -891,35 +890,35 @@ def main():
     print(f"Predicciones positivas: {y_pred.sum()}")
     
     # 11. Evaluación completa
-    print("\n10. 📊 EVALUACIÓN COMPLETA")
+    print("\n10.  EVALUACIÓN COMPLETA")
     metrics = evaluar_modelo_completo(y_test, y_pred, y_pred_proba, model, X_test_scaled, X.columns)
     
     # 12. Exportar coeficientes
-    print("\n11. 📄 EXPORTAR COEFICIENTES")
+    print("\n11.  EXPORTAR COEFICIENTES")
     coeficientes_df = exportar_coeficientes(model, X.columns, carpeta_salida)
     
     # 13. Crear gráficos de análisis exploratorio
-    print("\n12. 📊 CREAR GRÁFICOS DE ANÁLISIS EXPLORATORIO")
+    print("\n12.  CREAR GRÁFICOS DE ANÁLISIS EXPLORATORIO")
     crear_grafico_edad_vs_mortalidad(df_clean, carpeta_salida)
     crear_grafico_centro_vs_mortalidad(df_clean, carpeta_salida)
     
     # 14. Crear visualizaciones interactivas
-    print("\n13. 📈 CREAR VISUALIZACIONES INTERACTIVAS")
+    print("\n13.  CREAR VISUALIZACIONES INTERACTIVAS")
     fig = crear_curva_roc_interactiva(metrics, y_test, y_pred, y_pred_proba, coeficientes_df, df_clean, carpeta_salida)
     
     # RESUMEN FINAL
     print("\n" + "=" * 60)
     print("RESUMEN DEL ANÁLISIS AVANZADO - TODAS LAS TÉCNICAS IMPLEMENTADAS")
     print("=" * 60)
-    print(f"📊 Dataset: {df_clean.shape[0]} filas, {df_clean.shape[1]} columnas")
-    print(f"🎯 Eventos críticos: {df_encoded['evento_critico'].sum()} ({df_encoded['evento_critico'].mean()*100:.2f}%)")
-    print(f"📈 Accuracy del modelo: {metrics['accuracy']:.4f} ({metrics['accuracy']*100:.2f}%)")
-    print(f"🔍 Outliers detectados: {len(outliers)}")
-    print(f"📁 Archivos generados en: {carpeta_salida}/")
+    print(f" Dataset: {df_clean.shape[0]} filas, {df_clean.shape[1]} columnas")
+    print(f" Eventos críticos: {df_encoded['evento_critico'].sum()} ({df_encoded['evento_critico'].mean()*100:.2f}%)")
+    print(f" Accuracy del modelo: {metrics['accuracy']:.4f} ({metrics['accuracy']*100:.2f}%)")
+    print(f" Outliers detectados: {len(outliers)}")
+    print(f" Archivos generados en: {carpeta_salida}/")
     print("=" * 60)
     
-    print("\n🎉 ¡ANÁLISIS AVANZADO COMPLETADO EXITOSAMENTE!")
-    print("✅ Todas las técnicas avanzadas han sido implementadas:")
+    print("\n ¡ANÁLISIS AVANZADO COMPLETADO EXITOSAMENTE!")
+    print(" Todas las técnicas avanzadas han sido implementadas:")
     print("   - Carga y limpieza robusta de datos")
     print("   - Detección de outliers")
     print("   - Codificación de variables categóricas")
