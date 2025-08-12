@@ -1,0 +1,4 @@
+﻿index,pred_Adelie,pred_Chinstrap,pred_Gentoo
+real_Adelie,45,0,0
+real_Chinstrap,0,21,0
+real_Gentoo,0,0,37

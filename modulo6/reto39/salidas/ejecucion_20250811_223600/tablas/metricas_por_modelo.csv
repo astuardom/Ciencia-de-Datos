@@ -1,0 +1,5 @@
+﻿modelo,accuracy,f1_macro
+LogisticRegression,1.0,1.0
+DecisionTree,1.0,1.0
+RandomForest,1.0,1.0
+SVM_linear,1.0,1.0

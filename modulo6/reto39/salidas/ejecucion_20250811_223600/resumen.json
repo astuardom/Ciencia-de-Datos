@@ -1,0 +1,30 @@
+{
+  "timestamp": "20250811_223600",
+  "dataset_csv": "penguins_size.csv",
+  "total_registros": 342,
+  "train_size": 239,
+  "test_size": 103,
+  "target_clases": [
+    "Adelie",
+    "Chinstrap",
+    "Gentoo"
+  ],
+  "features": [
+    "island",
+    "sex",
+    "culmen_length_mm",
+    "culmen_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g"
+  ],
+  "modelos": [
+    "LogisticRegression",
+    "DecisionTree",
+    "RandomForest",
+    "SVM_linear"
+  ],
+  "mejor_modelo_por_accuracy": "LogisticRegression",
+  "accuracy_mejor_modelo": 1.0,
+  "f1macro_mejor_modelo": 1.0,
+  "tiempo_total_seg": 1.069
+}
