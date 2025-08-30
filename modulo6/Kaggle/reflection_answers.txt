@@ -1,0 +1,37 @@
+RESPUESTAS A PREGUNTAS DE REFLEXIÓN
+============================================================
+
+PCA:
+
+❓ ¿Qué significa que el PCA 2D capture, por ejemplo, 45% de la varianza?
+💡 Significa que con solo 2 componentes principales se puede explicar el 45% de la variabilidad total de los datos originales. Los componentes restantes contienen el 55% restante de la información.
+
+❓ ¿Por qué es importante escalar los datos antes de aplicar PCA?
+💡 Porque PCA es sensible a la escala de las variables. Sin escalado, variables con mayor varianza (como colesterol en mg/dL) dominarían el análisis sobre variables con menor varianza (como edad en años).
+
+❓ ¿Qué diferencias observas entre PCA 2D y PCA 3D en cuanto a la separación de las clases?
+💡 PCA 3D generalmente proporciona mejor separación de clases al capturar más información, pero puede ser más difícil de visualizar e interpretar que PCA 2D.
+
+❓ ¿Crees que PCA es útil para clasificación en este dataset? ¿Por qué?
+💡 Sí, PCA puede ser útil para clasificación al reducir ruido y multicollinealidad, pero puede perder información importante para la clasificación si los componentes principales no están alineados con la separación de clases.
+
+❓ Si usáramos 10 componentes en lugar de 2 o 3, ¿qué cambiaría en la varianza explicada y en la visualización?
+💡 Con 10 componentes se capturaría casi toda la varianza (cerca del 100%), pero la visualización sería imposible en 2D/3D y se perdería el beneficio de la reducción de dimensionalidad.
+
+t-SNE:
+
+❓ ¿Qué papel juega el parámetro perplexity en t-SNE y cómo afecta la visualización?
+💡 Perplexity controla el balance entre preservación de estructura local y global. Valores bajos (5-10) preservan mejor la estructura local, mientras que valores altos (30-50) preservan mejor la estructura global.
+
+❓ ¿Por qué t-SNE es más costoso en tiempo que PCA?
+💡 t-SNE es un algoritmo iterativo que optimiza una función de costo compleja, mientras que PCA es una descomposición matricial directa. t-SNE requiere múltiples iteraciones para converger.
+
+❓ ¿Qué diferencias principales observas entre la distribución de puntos en PCA vs t-SNE?
+💡 PCA produce una proyección lineal que puede mostrar mejor la separación global, mientras que t-SNE crea clusters más compactos y preserva mejor las relaciones de vecindad locales.
+
+❓ ¿Por qué se dice que t-SNE no es recomendable como entrada para un clasificador supervisado?
+💡 Porque t-SNE no garantiza que las distancias entre puntos se preserven de manera consistente, y diferentes ejecuciones pueden producir resultados diferentes, lo que hace inestable el entrenamiento de clasificadores.
+
+❓ ¿En qué escenarios del mundo real preferirías usar t-SNE en lugar de PCA?
+💡 t-SNE es preferible cuando se busca explorar la estructura de clusters en datos complejos, visualizar relaciones no lineales, o cuando la preservación de vecindarios locales es más importante que la interpretabilidad lineal.
+
